@@ -1,0 +1,42 @@
+---
+title: "My Presentation"
+author: "Wayne Hockensmith"
+date: "April 10, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## The BLUF Slide
+This would be the BLUF (Bottom Line Up Front) statement.  
+
+Discribe what you will see in the next few slides and why.  
+
+Also what the out come will be.
+
+##  History Slide
+Discribe how we got here.  What the issues are and what is broke and if nessesary what is not broke.  Graphs to support problems
+```{r cars, echo = TRUE}
+plot(cars$dist)
+```
+
+
+## COA Slide (Coarse Of Action)
+
+- COA 1
+Pros and Cons of COA
+- COA 2
+Pros and Cons of COA
+- COA 3
+Pros and Cons of COA
+
+
+## Recomended COA
+Supporting graphs for recomendation
+
+```{r pressure}
+plot(pressure)
+```
+
