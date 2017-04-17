@@ -1,0 +1,39 @@
+---
+title: "Navy Suicides FY11 to Present"
+date: "As of: April 15, 2017"
+output: html_document
+---
+
+```{r wold map, echo=FALSE, warning=FALSE,message=FALSE,  fig.width=10, fig.height=5,fig.show='hold',fig.align='left'}
+library(leaflet)
+library(maps)
+library(plotly)
+library(reshape2)
+library(data.table)
+mapWORLD = map("world", fill = FALSE, plot = FALSE) 
+geosuicide_all <- read.csv(file="C:/Users/Wayne/Desktop/r_map/geosuicide_all.csv", header=TRUE, sep=",")
+
+AnchorIcon <- makeIcon(
+  iconUrl = "https://cdn3.iconfinder.com/data/icons/nautical-icons/512/Anchor-512.png",
+  iconWidth = 31*215/230, iconHeight = 31,
+  iconAnchorX = 31*215/230/2, iconAnchorY = 16
+)
+
+
+leaflet(data = geosuicide_all) %>% 
+  addTiles() %>% 
+  addMarkers(~long, ~lat, popup = ~as.character(descrip), clusterOptions = markerClusterOptions(), icon = AnchorIcon) %>% 
+  setView(5, 20, zoom = 2) %>% 
+  addCircleMarkers(weight = 2, radius = sqrt(geosuicide_all$suicidenumbers)*2)
+```
+
+```{r graph, echo=FALSE, warning=FALSE,fig.width=10, fig.height=3, message=FALSE}
+
+plot_ly(geosuicide_all, x = geosuicide_all$event_location , y = geosuicide_all$suicidenumbers)%>%
+  layout(xaxis = list(title = "", tickangle = -45),
+         yaxis = list(title = ""),
+         margin = list(b = 100),
+         barmode = 'group')
+```
+
+Data contained with in does not reflect actuals.
