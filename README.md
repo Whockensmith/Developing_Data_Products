@@ -1,7 +1,7 @@
 # Shiny Project Week 4 of Developing Data Products
 The [server.R][2] and [ui.R][3] files can be found in folder ["/Dev_data_products"][1].  
 The .dcf file is in the ["/rsconnect"][4] subfolder.  
-  
+The Slidify slide show is located in the root directory "/Developing_Data_Products".  
 The [shinyapp][5] is located on the shinyoi server at ("https://whockensmith.shinyapps.io/developing_data_products_shinyapp_project/")  
 
 
