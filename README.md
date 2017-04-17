@@ -10,4 +10,4 @@ The shinyapp is located on the shinyoi server at ("https://whockensmith.shinyapp
 [1]:https://github.com/Whockensmith/Developing_Data_Products/tree/master/Dev_data_products
 [2]:https://github.com/Whockensmith/Developing_Data_Products/blob/master/Dev_data_products/server.R  
 [3]:https://github.com/Whockensmith/Developing_Data_Products/blob/master/Dev_data_products/ui.R
-[4]:
+[4]:https://github.com/Whockensmith/Developing_Data_Products/blob/master/Dev_data_products/rsconnect/shinyapps.io/whockensmith/developing_data_products_shinyapp_project.dcf
