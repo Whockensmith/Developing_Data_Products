@@ -6,8 +6,8 @@ There are two versions of the slide show:
 1.  [Knitting using ioslides][7].  
 2.  [Knitting usin slidy][8]. 
 
-I did both version of knitter to presentation because each one has pros and cons. I prefer slidy over ioslides
-The [shinyapp][5] is located on the shinyoi server at ("https://whockensmith.shinyapps.io/developing_data_products_shinyapp_project/")  
+I did both version of knitter to presentation because each one has pros and cons.  
+The [shinyapp][5] is located on the shinyio server at ("https://whockensmith.shinyapps.io/developing_data_products_shinyapp_project/")  
 The application was build using Rstudio (version 3.3.1 (2016-06-21)) and knited to Rstudio's shinyapp.io cloud server.  
 The data is from the mtcars table with in R-Studio.  It was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
 
